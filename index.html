@@ -647,9 +647,12 @@
       if(ext === 'pdf'){
         previewContent.innerHTML = `
           <div class="text-center py-8">
+            <!--我是註解
             <i class="fas fa-file-pdf text-4xl text-red-500 mb-3"></i>
             <h4 class="font-medium text-lg mb-1">${file.name}</h4>
             <p class="text-secondary-600 mb-4">PDF預覽功能需要後端支持</p>
+            -->
+            <iframe src="https://drive.google.com/file/d/1KDj00sA5XAm8J29ViwbZFsS_jCcX71vv/preview" width="640" height="480" allow="autoplay"></iframe>
             <button onclick="downloadFile('${file.name}')" class="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition">
               <i class="fas fa-download mr-2"></i>下載PDF
             </button>
